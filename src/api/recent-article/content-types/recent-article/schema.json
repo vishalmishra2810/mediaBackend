@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recent_articles",
+  "info": {
+    "singularName": "recent-article",
+    "pluralName": "recent-articles",
+    "displayName": "Recent Articles"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Articles": {
+      "type": "text"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "article": {
+      "type": "uid",
+      "targetField": "Articles"
+    }
+  }
+}
